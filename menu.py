@@ -5,7 +5,7 @@ from tkinter import messagebox
 # Crear la ventana principal
 root = tk.Tk()
 root.title("Menu")
-root.geometry("500x700")
+root.geometry("50x70")
 root.configure(bg="#f0f0f0")  # Color de fondo
 
 # Función para actualizar la barra de estado
