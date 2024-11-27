@@ -37,7 +37,7 @@ def monitoreo_servidor():
 
 def envioArchivos_cliente():
     os.system("python3 /Users/alexandermc/compu/doc/ciberseguridad/proyrcto/enviarArchivos_cliente.py")
-    mostrar_confirmacion("Envío de archivos en cliente ejecutado")
+    mostrar_confirmacion("Envío de archivos en cliente ")
     actualizar_estado("Envío de archivos en cliente ejecutado")
 
 def envioArchivos_servidor():
