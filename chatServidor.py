@@ -139,7 +139,7 @@ server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_socket.bind((SERVER_HOST, SERVER_PORT))
 server_socket.listen()
 
-# Crear ventana de la interfaz gráfica
+
 root = tk.Tk()
 root.title("Chat Servidor")
 
