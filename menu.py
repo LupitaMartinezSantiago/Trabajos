@@ -123,7 +123,6 @@ boton_permitir_ping.pack(pady=5)
 frame_chat = tk.LabelFrame(frame_botones, text="Chat", padx=10, pady=10, bg="#ffffff")
 frame_chat.pack(padx=10, pady=10, fill="both", expand="yes")
 
-# Botones de chat
 boton_chat_cliente = tk.Button(frame_chat, text="Chat cliente", command=chat_cliente, bg="#00bcd4", fg="black", width=25)
 boton_chat_cliente.pack(pady=5)
 
