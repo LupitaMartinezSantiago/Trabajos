@@ -54,7 +54,7 @@ root.title("BLoqueo")
 root.geometry("380x380")
 root.resizable(False, False)
 
-# Obtener dimensiones de la pantalla
+
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
