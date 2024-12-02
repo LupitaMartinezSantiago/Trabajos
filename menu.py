@@ -2,7 +2,7 @@ import tkinter as tk
 import os
 from tkinter import messagebox
 
-# Crear la ventana principal
+
 root = tk.Tk()
 root.title("Menu")
 root.geometry("50x70")
