@@ -70,13 +70,13 @@ def habilitar_botones(event=None):
         btn_block.config(state=tk.DISABLED)
         btn_unblock.config(state=tk.DISABLED)
 
-# Crear la ventana principal
+
 root = tk.Tk()
 root.title("Bloqueo de Páginas Web")
 root.geometry("600x300")
 root.resizable(False, False)
 
-# Obtener dimensiones de la pantalla
+
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
