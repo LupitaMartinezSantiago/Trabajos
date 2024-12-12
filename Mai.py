@@ -13,7 +13,7 @@ def run_receiver():
 
     try:
         while True:
-            # Recibir el tamaño de la imagen
+        
             while len(data) < payload_size:
                 data += receiver_socket.recv(4096)
             
@@ -38,7 +38,7 @@ def run_receiver():
             else:
                 print("Error en la decodificación de la imagen en el receptor.")
 
-            if cv2.waitKey(1) == 27:  # Presiona ESC para salir
+            if cv2.waitKey(1) == 27:  
                 break
 
     except KeyboardInterrupt:
