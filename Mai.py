@@ -5,7 +5,7 @@ import cv2
 
 def run_receiver():
     receiver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    receiver_socket.connect(('192.168.203.72', 5001))  # Reemplaza 'IP_DEL_SERVIDOR' con la IP del servidor
+    receiver_socket.connect(('192.168.203.72', 5001))  
     print("Conectado al servidor para recibir la pantalla.")
 
     data = b""
@@ -22,7 +22,7 @@ def run_receiver():
             msg_size = struct.unpack(">L", packed_msg_size)[0]
             print("Tamaño de imagen recibida en el receptor (esperado):", msg_size)
 
-            # Recibir la imagen
+          
             while len(data) < msg_size:
                 data += receiver_socket.recv(4096)
 
@@ -30,7 +30,7 @@ def run_receiver():
             data = data[msg_size:]
             print("Tamaño de datos de imagen recibidos en el receptor (real):", len(frame_data))
 
-            # Decodificar y mostrar la imagen
+           
             img = cv2.imdecode(np.frombuffer(frame_data, dtype=np.uint8), cv2.IMREAD_COLOR)
             if img is not None:
                 img_resized = cv2.resize(img, (800, 450))  # Ajusta el tamaño de la ventana de visualización
