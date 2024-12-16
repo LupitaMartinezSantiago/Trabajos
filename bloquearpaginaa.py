@@ -80,13 +80,13 @@ root.resizable(False, False)
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
-# Calcular la posición para centrar la ventana
+
 x = (screen_width // 2) - (600 // 2)
 y = (screen_height // 2) - (300 // 2)
 
 root.geometry(f"600x300+{x}+{y}")
 
-# Crear y organizar los widgets
+
 tk.Label(root, text="IP de la Computadora:").grid(row=0, column=0, padx=10, pady=5)
 entry_host = tk.Entry(root, width=50)
 entry_host.grid(row=0, column=1, padx=10, pady=5)
