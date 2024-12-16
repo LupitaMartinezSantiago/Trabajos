@@ -69,9 +69,9 @@ def save_screenshot(client_socket):
             screenshot_data += packet
 
         if screenshot_data:
-            root.withdraw()  # Ocultar la ventana principal temporalmente
+            root.withdraw()  
             file_path = filedialog.askdirectory(title="Selecciona la carpeta para guardar la captura de pantalla")
-            root.deiconify()  # Mostrar la ventana principal nuevamente
+            root.deiconify()  
             if file_path:
                 file_name = os.path.join(file_path, f"img{screenshot_count}.jpg")
                 while os.path.exists(file_name):
