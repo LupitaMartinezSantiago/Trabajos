@@ -6,17 +6,17 @@ from tkinter import messagebox
 root = tk.Tk()
 root.title("Menu")
 root.geometry("50x70")
-root.configure(bg="#f0f0f0")  # Color de fondo
+root.configure(bg="#f0f0f0")  
 
-# Función para actualizar la barra de estado
+
 def actualizar_estado(mensaje):
     barra_estado.config(text=mensaje)
 
-# Función para mostrar mensajes de confirmación
+
 def mostrar_confirmacion(mensaje):
     messagebox.showinfo("Confirmación", mensaje)
 
-# Crear un título
+
 titulo = tk.Label(root, text="Bienvenido, que quieres realizar pendejo?", font=("Helvetica", 16, "bold"), bg="#f0f0f0")
 titulo.pack(pady=20)
 
