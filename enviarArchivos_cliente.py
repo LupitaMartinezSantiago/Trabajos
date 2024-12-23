@@ -1,3 +1,4 @@
+# importaciones 
 import socket
 import os
 import tkinter as tk
