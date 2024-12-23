@@ -133,7 +133,6 @@ def on_closing():
     server_socket.close()
     root.destroy()
 
-# Crear un socket TCP/IP
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_socket.bind((SERVER_HOST, SERVER_PORT))
@@ -153,7 +152,6 @@ message_entry.bind("<Return>", send_message)
 send_button = tk.Button(root, text="Enviar", command=send_message)
 send_button.pack(pady=(0, 10))
 
-# Entrada de IP para captura de pantalla
 ip_entry = tk.Entry(root, width=30)
 ip_entry.pack(padx=10, pady=(0, 10))
 
