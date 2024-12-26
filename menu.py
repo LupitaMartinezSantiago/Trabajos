@@ -20,11 +20,11 @@ def mostrar_confirmacion(mensaje):
 titulo = tk.Label(root, text="Bienvenido, que quieres realizar pendejo?", font=("Helvetica", 16, "bold"), bg="#f0f0f0")
 titulo.pack(pady=20)
 
-# Crear un marco para los botones
+
 frame_botones = tk.Frame(root, bd=2, relief=tk.RAISED, padx=10, pady=10, bg="#ffffff")
 frame_botones.pack(padx=20, pady=10, fill=tk.BOTH, expand=True)
 
-# Funciones para ejecutar cada script
+
 def monitoreo_cliente():
     os.system("python3 /Users/alexandermc/compu/doc/ciberseguridad/proyrcto/pantallas_clientes.py")
     mostrar_confirmacion("Monitoreo en cliente ejecutado")
