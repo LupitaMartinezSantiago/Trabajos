@@ -133,13 +133,13 @@ boton_chat_server.pack(pady=5)
 boton_bloqueo_paginas = tk.Button(frame_control, text="Bloqueo de páginas", command=ejecutar_bloqueo_paginas, bg="#7d1fa2", fg="white", width=25)
 boton_bloqueo_paginas.pack(pady=5)
 
-# Botón de salir
+
 boton_salir = tk.Button(root, text="Salir", command=root.quit, bg="red", fg="white", width=25)
 boton_salir.pack(pady=20)
 
-# Crear una barra de estado
+
 barra_estado = tk.Label(root, text="Listo", bd=1, relief=tk.SUNKEN, anchor=tk.W)
 barra_estado.pack(side=tk.BOTTOM, fill=tk.X)
 
-# Ejecutar la ventana principal
+
 root.mainloop()
