@@ -31,10 +31,10 @@ def allow_ping(ips):
 
 def deny_ping(ips):
     for ip in ips:
-        # Verificar si la regla de aceptación existe
+       
         check_command = f"sudo iptables -C INPUT -p icmp --icmp-type echo-request -s {ip} -j ACCEPT"
         if check_rule_exists(check_command):
-            # Eliminar la regla de aceptación si existe
+
             command = f"sudo iptables -D INPUT -p icmp --icmp-type echo-request -s {ip} -j ACCEPT"
             run_command(command)
         
