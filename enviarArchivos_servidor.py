@@ -81,7 +81,7 @@ def handle_client(client_socket, dest_folder):
         print(f"Error en handle_client: {e}")
     finally:
         client_socket.close()
-
+#Se declara el puerto y la ip
 def start_server(host='0.0.0.0', port=44444, dest_folder='/Users/alexandermc/compu/doc/ciberseguridad/proyrcto/archivos_recibidos'):
     try:
         if not os.path.exists(dest_folder):
