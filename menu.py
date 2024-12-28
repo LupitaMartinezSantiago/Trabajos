@@ -102,7 +102,7 @@ boton_envioArchivos_cliente.pack(pady=5)
 boton_envioArchivos_servidor = tk.Button(frame_envios, text="Envio de Archivos en servidor", command=envioArchivos_servidor, bg="#ec407a", fg="black", width=25)
 boton_envioArchivos_servidor.pack(pady=5)
 
-# Crear un marco para agrupar los botones de Control
+
 frame_control = tk.LabelFrame(frame_botones, text="Control Remoto", padx=10, pady=10, bg="#ffffff")
 frame_control.pack(padx=10, pady=10, fill="both", expand="yes")
 
@@ -119,7 +119,7 @@ boton_denegar_ping.pack(pady=5)
 boton_permitir_ping = tk.Button(frame_control, text="Permitir ping remoto", command=permitir_ping, bg="#7d1fa2", fg="white", width=25)
 boton_permitir_ping.pack(pady=5)
 
-# Crear un marco para agrupar los botones de Chat
+
 frame_chat = tk.LabelFrame(frame_botones, text="Chat", padx=10, pady=10, bg="#ffffff")
 frame_chat.pack(padx=10, pady=10, fill="both", expand="yes")
 
@@ -129,7 +129,6 @@ boton_chat_cliente.pack(pady=5)
 boton_chat_server = tk.Button(frame_chat, text="Chat servidor", command=chat_servidor, bg="#00bcd4", fg="black", width=25)
 boton_chat_server.pack(pady=5)
 
-# Botón para bloqueo de páginas
 boton_bloqueo_paginas = tk.Button(frame_control, text="Bloqueo de páginas", command=ejecutar_bloqueo_paginas, bg="#7d1fa2", fg="white", width=25)
 boton_bloqueo_paginas.pack(pady=5)
 
