@@ -38,7 +38,7 @@ def deny_ping(ips):
             command = f"sudo iptables -D INPUT -p icmp --icmp-type echo-request -s {ip} -j ACCEPT"
             run_command(command)
         
-        # Agregar la regla de denegación
+      
         command = f"sudo iptables -I INPUT -p icmp --icmp-type echo-request -s {ip} -j DROP"
         run_command(command)
         print(f"Ping denegado desde la IP {ip}")
@@ -53,10 +53,10 @@ def execute_action(action):
     else:
         messagebox.showerror("Error", "Acción no válida.")
 
-# Direcciones IP predeterminadas
+
 ips = ['0.0.0.0']
 
-# Crear la interfaz gráfica
+
 root = tk.Tk()
 root.title("PINGS")
 root.geometry("400x200")
@@ -65,7 +65,7 @@ action_label = tk.Label(root, text="¿Quieres permitir o denegar el ping?")
 action_label.pack(pady=10)
 
 action_variable = tk.StringVar(root)
-action_variable.set("Seleccione la accion")  # Valor por defecto
+action_variable.set("Seleccione la accion") 
 
 action_menu = tk.OptionMenu(root, action_variable, "permitir", "denegar")
 action_menu.pack(pady=10)
