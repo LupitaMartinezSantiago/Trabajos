@@ -3,13 +3,13 @@ import cv2
 import numpy as np
 import struct
 from mss import mss
-# mostrara a los clientes
+
 def capture_and_send_screen(conn):
     with mss() as sct:
         while True:
          
             screen = sct.grab(sct.monitors[0])
-            # Convierte la captura en un array de NumPy
+           
             screen_np = np.array(screen)
          
             _, frame = cv2.imencode('.jpg', screen_np)
