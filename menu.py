@@ -91,11 +91,11 @@ boton_monitoreo_cliente.pack(pady=5)
 boton_monitoreo_servidor = tk.Button(frame_monitoreo, text="Monitoreo en servidor", command=monitoreo_servidor, bg="#64ffda", fg="black", width=25)
 boton_monitoreo_servidor.pack(pady=5)
 
-# Crear un marco para agrupar los botones de Envío de Archivos
+
 frame_envios = tk.LabelFrame(frame_botones, text="Envío de Archivos", padx=10, pady=10, bg="#ffffff")
 frame_envios.pack(padx=10, pady=10, fill="both", expand="yes")
 
-# Botones de envío de archivos
+
 boton_envioArchivos_cliente = tk.Button(frame_envios, text="Envio de Archivos en cliente", command=envioArchivos_cliente, bg="#ec407a", fg="black", width=25)
 boton_envioArchivos_cliente.pack(pady=5)
 
@@ -106,7 +106,6 @@ boton_envioArchivos_servidor.pack(pady=5)
 frame_control = tk.LabelFrame(frame_botones, text="Control Remoto", padx=10, pady=10, bg="#ffffff")
 frame_control.pack(padx=10, pady=10, fill="both", expand="yes")
 
-# Botones de control remoto
 boton_bloqueo_teclado_mouse = tk.Button(frame_control, text="Bloqueo de teclado y mouse", command=ejecutar_bloqueo_teclado_mouse, bg="#7d1fa2", fg="white", width=25)
 boton_bloqueo_teclado_mouse.pack(pady=5)
 
