@@ -75,7 +75,7 @@ def receive_file(dest_folder):
         print(f"Error al recibir el archivo: {e}")
     finally:
         client_socket.close()
-
+# Se define el cliente
 def start_client(host, port):
     global client_socket
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
