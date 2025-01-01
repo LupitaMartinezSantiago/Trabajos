@@ -80,11 +80,11 @@ def ejecutar_bloqueo_paginas():
     mostrar_confirmacion("Bloqueo de páginas ejecutado")
     actualizar_estado("Bloqueo de páginas ejecutado")
 
-# Crear un marco para agrupar los botones de Monitoreo
+
 frame_monitoreo = tk.LabelFrame(frame_botones, text="Monitoreo", padx=10, pady=10, bg="#ffffff")
 frame_monitoreo.pack(padx=10, pady=10, fill="both", expand="yes")
 
-# Botones de monitoreo
+
 boton_monitoreo_cliente = tk.Button(frame_monitoreo, text="Monitoreo en cliente", command=monitoreo_cliente, bg="#64ffda", fg="black", width=25)
 boton_monitoreo_cliente.pack(pady=5)
 
