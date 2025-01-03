@@ -1,7 +1,7 @@
 import socket
 import os
 import threading
-
+#IMPORTACIONES
 def send_file(connection, dest_folder):
     try:
         filename = connection.recv(1024).decode('utf-8')
