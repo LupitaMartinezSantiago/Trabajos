@@ -106,10 +106,10 @@ tk.Label(root, text="Páginas Web a bloquear:").grid(row=3, column=0, padx=10, p
 entry_domains = tk.Entry(root, width=50)
 entry_domains.grid(row=3, column=1, padx=10, pady=5)
 entry_domains.bind("<KeyRelease>", habilitar_botones)
-
+#Definir botones para bloquear
 btn_block = tk.Button(root, text="Bloquear el acceso", command=block_websites_remote, bg="red", fg="black", state=tk.DISABLED)
 btn_block.grid(row=4, column=0, padx=10, pady=20)
-
+#Definir botones de permitir rl acceso
 btn_unblock = tk.Button(root, text="Permitir el Acceso", command=unblock_websites_remote, bg="blue", fg="black", state=tk.DISABLED)
 btn_unblock.grid(row=4, column=1, padx=10, pady=20)
 
