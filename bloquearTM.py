@@ -1,7 +1,7 @@
 import paramiko
 import tkinter as tk
 from tkinter import messagebox
-#Definir las datos necesarios
+
 
 def ejecutar_comando_ssh(host, usuario, contraseña, comando):
     try:
@@ -81,7 +81,7 @@ tk.Label(root, text="Contraseña de la maquina:").pack(anchor="w", padx=20)
 contraseña_entry = tk.Entry(root, show="*")
 contraseña_entry.pack(fill="x", padx=20)
 contraseña_entry.bind("<KeyRelease>", habilitar_botones)
-
+#Boton para bloquear
 btn_bloquear = tk.Button(root, text="Bloquear", command=ejecutar_comando_bloquear, state=tk.DISABLED)
 btn_bloquear.pack(pady=10)
 
