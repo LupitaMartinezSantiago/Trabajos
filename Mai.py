@@ -2,7 +2,7 @@ import socket
 import struct
 import numpy as np
 import cv2
-# Importaciones 
+
 def run_receiver():
     receiver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     receiver_socket.connect(('192.168.203.72', 5001))  
@@ -10,7 +10,7 @@ def run_receiver():
 
     data = b""
     payload_size = struct.calcsize(">L")
-#Clicos
+
     try:
         while True:
         
