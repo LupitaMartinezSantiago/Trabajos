@@ -121,13 +121,13 @@ boton_permitir_ping.pack(pady=5)
 
 frame_chat = tk.LabelFrame(frame_botones, text="Chat", padx=10, pady=10, bg="#ffffff")
 frame_chat.pack(padx=10, pady=10, fill="both", expand="yes")
-
+#Botones de para el chat del cliente
 boton_chat_cliente = tk.Button(frame_chat, text="Chat cliente", command=chat_cliente, bg="#00bcd4", fg="black", width=25)
 boton_chat_cliente.pack(pady=5)
-
+#Boton para el chat servidor 
 boton_chat_server = tk.Button(frame_chat, text="Chat servidor", command=chat_servidor, bg="#00bcd4", fg="black", width=25)
 boton_chat_server.pack(pady=5)
-
+#Boton de bloqueo de paginas
 boton_bloqueo_paginas = tk.Button(frame_control, text="Bloqueo de páginas", command=ejecutar_bloqueo_paginas, bg="#7d1fa2", fg="white", width=25)
 boton_bloqueo_paginas.pack(pady=5)
 
