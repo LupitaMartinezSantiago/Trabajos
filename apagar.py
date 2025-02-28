@@ -51,14 +51,14 @@ x = (screen_width // 2) - (380 // 2)
 y = (screen_height // 2) - (380 // 2)
 
 root.geometry(f"380x380+{x}+{y}")
-
+#Conexion usuario cliente
 tk.Label(root, text="Apagar la computadora de un usuario/cliente").pack(pady=10)
 
 tk.Label(root, text="Ip de la computadora:").pack(anchor="w", padx=20)
 host_entry = tk.Entry(root)
 host_entry.pack(fill="x", padx=20)
 host_entry.bind("<KeyRelease>", habilitar_boton)
-
+#Declaracion de usuarios 
 tk.Label(root, text="Nombre de usuario de la computadora:").pack(anchor="w", padx=20)
 usuario_entry = tk.Entry(root)
 usuario_entry.pack(fill="x", padx=20)
