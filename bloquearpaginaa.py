@@ -27,7 +27,7 @@ def execute_remote_command(host, username, password, command):
         return output, error
     except Exception as e:
         return None, str(e)
-# Definir comandos 
+
 def block_websites_remote():
     host = entry_host.get()
     username = entry_user.get()
