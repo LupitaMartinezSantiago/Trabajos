@@ -54,6 +54,10 @@ def execute_action(action):
         messagebox.showerror("Error", "Acción no válida.")
 
 
+
+
+
+
 ips = ['0.0.0.0']
 
 
