@@ -3,7 +3,7 @@ import threading
 import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox
 import os
-import struct 
+import struct #importaciones
 
 SERVER_HOST = '172.168.3.104'
 SERVER_PORT = 9685
