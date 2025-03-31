@@ -2,7 +2,7 @@ import paramiko
 import tkinter as tk
 from tkinter import messagebox
 
-#importaciones
+
 def ejecutar_comando_ssh(host, usuario, contraseña, comando):
     try:
         ssh_client = paramiko.SSHClient()
