@@ -1,7 +1,7 @@
 import paramiko
 import tkinter as tk
 from tkinter import messagebox
-#importaciones
+
 
 def ejecutar_comando_ssh(host, usuario, contraseña, comando):
     try:
@@ -54,7 +54,7 @@ y = (screen_height // 2) - (380 // 2)
 root.geometry(f"380x380+{x}+{y}")
 #Conexion usuario cliente
 tk.Label(root, text="Apagar la computadora de un usuario/cliente").pack(pady=10)
-#Conexion usuario cliente
+
 tk.Label(root, text="Ip de la computadora:").pack(anchor="w", padx=20)
 host_entry = tk.Entry(root)
 host_entry.pack(fill="x", padx=20)
