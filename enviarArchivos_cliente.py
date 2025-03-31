@@ -123,7 +123,7 @@ y = (screen_height // 2) - (180 // 2)
 root.geometry(f"380x180+{x}+{y}")
 
 tk.Label(root, text="Modo: Cliente").pack(pady=10)
-
+#Botones
 connect_button = tk.Button(root, text="Conectar", command=connect_action)
 connect_button.pack(pady=10)
 
