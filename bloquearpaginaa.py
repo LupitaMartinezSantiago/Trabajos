@@ -113,5 +113,5 @@ btn_block.grid(row=4, column=0, padx=10, pady=20)
 btn_unblock = tk.Button(root, text="Permitir el Acceso", command=unblock_websites_remote, bg="blue", fg="black", state=tk.DISABLED)
 btn_unblock.grid(row=4, column=1, padx=10, pady=20)
 
-# Ejecutar la interfaz
+
 root.mainloop()
